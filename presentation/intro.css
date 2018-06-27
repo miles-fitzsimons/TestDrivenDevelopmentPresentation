@@ -1,0 +1,34 @@
+.intro-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% 15% 10% 15% auto 20%;
+  height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  align-self: center;
+  font-size: 10vh;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.sub-heading {
+  align-self: center;
+  font-size: 8vh;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.byline {
+  align-self: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: 5vh;
+}
+
+.navigation-menu {
+  align-self: center;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
