@@ -1,0 +1,10 @@
+.requirements-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "forExample lights"
+    "bullets lights"
+    "footer footer";
+  grid-template-columns: [heading-start footer-start] 50% 50% [heading-end footer-end];
+  grid-template-rows: [heading-start] 15% [heading-end] 20% auto [footer-start] 20% [footer-end];
+}

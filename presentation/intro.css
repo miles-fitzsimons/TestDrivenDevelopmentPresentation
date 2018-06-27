@@ -1,16 +1,7 @@
 .intro-container {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 10% 15% 10% 15% auto 20%;
-  height: 100vh;
-  text-align: center;
-}
-
-.heading {
-  align-self: center;
-  font-size: 10vh;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-template-columns: [header-start footer-start] auto [header-end footer-end];
+  grid-template-rows: 10% [header-start] 15% [header-end] 10% 15% auto [footer-start] 20% [footer-end];
 }
 
 .sub-heading {
@@ -25,10 +16,4 @@
   grid-row-start: 4;
   grid-row-end: 5;
   font-size: 5vh;
-}
-
-.navigation-menu {
-  align-self: center;
-  grid-row-start: 6;
-  grid-row-end: 7;
 }
