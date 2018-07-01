@@ -11,15 +11,6 @@ a {
   text-align: center;
 }
 
-.heading {
-  align-self: center;
-  font-size: 10vh;
-  grid-column-start: header-start;
-  grid-column-end: header-end;
-  grid-row-start: header-start;
-  grid-row-end: header-end;
-}
-
 .navigation-menu {
   align-self: center;
   /* have a font size? */

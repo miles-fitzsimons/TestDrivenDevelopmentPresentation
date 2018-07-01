@@ -1,7 +1,16 @@
 .intro-container {
   display: grid;
   grid-template-columns: [header-start footer-start] auto [header-end footer-end];
-  grid-template-rows: 10% [header-start] 15% [header-end] 10% 15% auto [footer-start] 20% [footer-end];
+  grid-template-rows: 10% [header-start] 15% [header-end] 10% 15% auto [footer-start] 10% [footer-end];
+}
+
+.heading {
+  align-self: center;
+  font-size: 10vh;
+  grid-column-start: header-start;
+  grid-column-end: header-end;
+  grid-row-start: header-start;
+  grid-row-end: header-end;
 }
 
 .sub-heading {

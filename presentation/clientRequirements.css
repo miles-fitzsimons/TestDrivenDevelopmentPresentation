@@ -1,10 +1,74 @@
 .requirements-container {
   display: grid;
   grid-template-areas:
-    "header header"
-    "forExample lights"
-    "bullets lights"
+    "requirementsHeader tddWayHeader"
+    "bullets redLight"
+    "bullets greenLight"
+    "bullets refactor"
     "footer footer";
-  grid-template-columns: [heading-start footer-start] 50% 50% [heading-end footer-end];
-  grid-template-rows: [heading-start] 15% [heading-end] 20% auto [footer-start] 20% [footer-end];
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% auto auto auto 10%;
+}
+
+.requirements-heading {
+  /* align-self: center; */
+  border-right: 5px solid black;
+  font-size: 8vh;
+  grid-area: requirementsHeader;
+}
+
+.bullets {
+  border-right: 5px solid black;
+  font-size: 3vh;
+  grid-area: bullets;
+  text-align: left;
+}
+
+.bullet {
+  font-size: 5vh;
+  margin-left: 2vh;
+}
+
+.code-div {
+  margin-top: 1vh;
+}
+
+.code-span {
+  background-color: black;
+  border-radius: 5px;
+  color: #39cc39;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  padding: 8px 20px;
+}
+
+.tdd-way-heading {
+  /* align-self: center; */
+  font-size: 8vh;
+  grid-area: tddWayHeader;
+}
+
+.red-light {
+  grid-area: redLight;
+  background-color: red;
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
+  justify-self: center;
+  margin-top: 3vh;
+}
+
+.green-light {
+  grid-area: greenLight;
+  background-color: green;
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
+  justify-self: center;
+  margin-top: 3vh;
+}
+
+.refactor {
+  grid-area: refactor;
+  font-size: 8vh;
 }
