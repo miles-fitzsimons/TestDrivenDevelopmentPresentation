@@ -14,25 +14,27 @@
     <div class="bullets">
       <ol>
         <li class="bullet">
-          <span>An empty string returns zero</span>
-          <div class="code-div">
-            <span class="code-span">"" => 0</span>
-          </div>
-        </li>
-        <br/>
-        <br/>
-        <li class="bullet">
           <span>A single number returns the value</span>
           <div class="code-div">
             <span class="code-span">"42" => 42</span>
           </div>
         </li>
-        <br/>
-        <br/>
         <li class="bullet">
-          <span>Two comma delimited numbers returns the sum</span>
+          <span>Two comma-delimited numbers returns the sum</span>
           <div class="code-div">
             <span class="code-span">"4,5" => 9</span>
+          </div>
+        </li>
+        <li class="bullet">
+          <span>Two newline-delimited numbers returns the sum</span>
+          <div class="code-div">
+            <span class="code-span">"3\n2" => 5</span>
+          </div>
+        </li>
+        <li class="bullet">
+          <span>An unknown amount of numbers returns the sum</span>
+          <div class="code-div">
+            <span class="code-span">"4,5\n,6\n7" => 22</span>
           </div>
         </li>
       </ol>
