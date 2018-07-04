@@ -7,6 +7,10 @@ Hi, I'm Miles. I'm a developer in Sales and Purchases and I like test-driven dev
 Audience interaction required - talk won't work otherwise. I doubt there'll be time for questions at the end, so please ask them during.
 
 ===== About Slide =====
+Start with:
+Traditionally, the development cycle often looks like this: You have some requirements, so you write some application logic and then if you have time or can be bothered you write some tests. Then you open a pull request, have the code reviewed and merged and released some time in the future.
+TDD is very similar, but it has one minor but very important difference: You write the tests first. You write a test for a method or a class that may not even exist. And then you see that test fail. In some languages, the code may not even compile, so this is not a graceful failure. You can then create the method or class in order to see the test fail gracefully. Great. Now you are ready to start implementing the logic.
+
 == Pros ==
 
 - Gives confidence - mainline development (no PRs) and release to prod several times a day. Failures must be addressed immediately
@@ -14,14 +18,13 @@ Audience interaction required - talk won't work otherwise. I doubt there'll be t
 - improves quality
 - Self documenting
 - Finds defects earlier -> leads to less defects
-== Cons ==
+  == Cons ==
 
 - requires discipline
 - Takes longer. Buuuuuutttttttt slide 11 of dehringer
 
 https://www.slideshare.net/dehringer/test-driven-development-5785229
 The three laws of TDD: slide 8
-
 
 Intro
 About
@@ -39,15 +42,13 @@ https://www.youtube.com/watch?v=QCif_-r8eK4
 - We get focus and clarity - do nothing more than pass this one test.
 - Figure it out first, let it drive what you write.
 
-
-
 ## Client requirements
+
 Maybe put empty string returns 0 as an edge case
 returns 1 number
 returns sum of 2 numbers
 also works for \n
 returns sum of unknown numbers
-
 
 https://www.youtube.com/watch?v=y6yJuPJK67w
 at circa 8:00 for studies on drops in bugs
