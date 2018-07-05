@@ -14,7 +14,7 @@
 }
 
 .about-subheader {
-  font-size: 6vh;
+  font-size: 8vh;
   text-align: center;
 }
 
@@ -43,4 +43,6 @@
 .about-bullet {
   margin-left: 10vh;
   text-align: left;
+  margin-bottom: 5vh;
+  font-size: 5vh;
 }
