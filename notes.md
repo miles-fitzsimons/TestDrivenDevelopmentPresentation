@@ -42,15 +42,38 @@ https://www.youtube.com/watch?v=QCif_-r8eK4
 - We get focus and clarity - do nothing more than pass this one test.
 - Figure it out first, let it drive what you write.
 
-## Client requirements
-
-Maybe put empty string returns 0 as an edge case
-returns 1 number
-returns sum of 2 numbers
-also works for \n
-returns sum of unknown numbers
-
 https://www.youtube.com/watch?v=y6yJuPJK67w
 at circa 8:00 for studies on drops in bugs
 
-This is just the beginning - there's still mocking and dependency injection
+From Video:
+Doing unit testing is not the same thing as TDD
+And we will run those tests, and the first time we run them they should fail
+Not just once or twice, but all the time.
+Maybe won't compile, or maybe will say I can't find this method
+Before we write any new code, we write a failing test:
+We want the test to fail, because if it doesn't we have some other problem going on. Maybe we're not actually testing what we think we're testing. This is the fundamental basis of TDD
+We first write a failing test, and only after it fails do we write the application logic that passes that test.
+And we write the minimum necessary code to just pass that test.
+One thing it removes is needing to juggle in our heads about what it needs to do today and tomorrow. Instead, just pass this one small test. This can influence design and implementation.
+
+This is a subtle change in priority but it has dramatic impact on the way you appraoch and write code.
+
+So why do it?
+
+In 2008, Microsoft, IBM and the North Carolina State University colloborated on research into TDD and published a paper entitled: "Realizing quality improvement through test driven development". In this paper, they contend that, and I quote, "The results of the case studies indicate that the pre-release defect density of the four products decreased between 40% and 90% relative to similar projects that did not use the TDD practice".
+
+** Next slide **
+
+As demonstrated by Microsoft et al, TDD leads to fewer bugs and therefore higher code quality. This leads to higher confidence in your code base, which in turn leads to fast release cycles and a high release frequency. My team practices mainline development. This means that when we are satisfied with our code, we push directly to upstream master. Every time. We do not have pull requests and we do not have traditional code review. However, we have confidence. We often work in pairs or in a group, so code is reviewed in that way. Our devs are becoming QAs and our QAs are becoming devs. Quality is everybody's responsibility, not just QAs. Once we have pushed to upstream master, we hit a button in TeamCity and our code is in production within about 6 minutes. We release several times a day, every day. It is liberating. But accidents do happen. And we address mistakes immediately. If a build is failing, we stop dev work and fix it.
+
+TDD encourages elegance. We are going to do a live demo soon, and you will see how this is realised. Once you have made your failing test pass, you have the opportunity to refactor your code. And because your code is throughly tested, you will know the second that your refactor has broken it.
+
+There are of course some drawbacks to TDD. The most common argument is that it takes more time to practice TDD. Quoting the same paper from before, "Subjectively, the teams experienced a 15–35% increase in initial development time after adopting TDD". Huh, that's not good. However, I argue that this is a sound investment. From that same paper "this increase in development time is offset by the reduced maintenance costs due to the improvement in quality". And some blog I found on Medium states fixing a bug in production costs 15x more than fixing a bug at implementation time. But I'd take that with a grain of salt.
+
+There are many more pros and many more cons...
+
+Mainline development - confidence - quality - frequent release.
+
+TODO:
+Figure out how to change tabs in VSCode w keyboard
+research mainline development
