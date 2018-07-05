@@ -1,28 +1,29 @@
 .intro-container {
   display: grid;
-  grid-template-columns: [header-start footer-start] auto [header-end footer-end];
-  grid-template-rows: 10% [header-start] 15% [header-end] 10% 15% auto [footer-start] 10% [footer-end];
+  grid-template-areas:
+    "top-space"
+    "header"
+    "subheader"
+    "byline"
+    "bottom-space";
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 15% 10% 10% auto;
 }
 
-.heading {
+.intro-header {
   align-self: center;
+  grid-area: header;
   font-size: 10vh;
-  grid-column-start: header-start;
-  grid-column-end: header-end;
-  grid-row-start: header-start;
-  grid-row-end: header-end;
 }
 
-.sub-heading {
+.intro-subheader {
   align-self: center;
   font-size: 8vh;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-area: subheader;
 }
 
 .byline {
   align-self: center;
-  grid-row-start: 4;
-  grid-row-end: 5;
   font-size: 5vh;
+  grid-area: byline;
 }

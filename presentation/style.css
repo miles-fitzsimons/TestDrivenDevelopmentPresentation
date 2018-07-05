@@ -4,6 +4,7 @@ body {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 .container {
@@ -11,11 +12,6 @@ a {
   text-align: center;
 }
 
-.navigation-menu {
-  align-self: center;
-  /* have a font size? */
-  grid-column-start: footer-start;
-  grid-column-end: footer-end;
-  grid-row-start: footer-start;
-  grid-row-end: footer-end;
+ul {
+  list-style-type: square;
 }

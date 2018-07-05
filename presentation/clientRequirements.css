@@ -1,20 +1,18 @@
 .requirements-container {
   display: grid;
   grid-template-areas:
-    "requirementsHeader tddWayHeader"
-    "bullets redLight"
-    "bullets greenLight"
-    "bullets refactor"
-    "footer footer";
+    "requirements-header tdd-way-header"
+    "bullets red-light"
+    "bullets green-light"
+    "bullets refactor";
   grid-template-columns: 60% 40%;
-  grid-template-rows: 10% auto auto auto 10%;
+  grid-template-rows: 10% auto auto auto;
 }
 
-.requirements-heading {
-  /* align-self: center; */
+.requirements-header {
   border-right: 5px solid black;
   font-size: 8vh;
-  grid-area: requirementsHeader;
+  grid-area: requirements-header;
 }
 
 .bullets {
@@ -43,14 +41,13 @@
   padding: 8px 20px;
 }
 
-.tdd-way-heading {
-  /* align-self: center; */
+.tdd-way-header {
   font-size: 8vh;
-  grid-area: tddWayHeader;
+  grid-area: tdd-way-header;
 }
 
 .red-light {
-  grid-area: redLight;
+  grid-area: red-light;
   background-color: red;
   border-radius: 50%;
   height: 25vh;
@@ -60,7 +57,7 @@
 }
 
 .green-light {
-  grid-area: greenLight;
+  grid-area: green-light;
   background-color: green;
   border-radius: 50%;
   height: 25vh;

@@ -70,10 +70,22 @@ TDD encourages elegance. We are going to do a live demo soon, and you will see h
 
 There are of course some drawbacks to TDD. The most common argument is that it takes more time to practice TDD. Quoting the same paper from before, "Subjectively, the teams experienced a 15–35% increase in initial development time after adopting TDD". Huh, that's not good. However, I argue that this is a sound investment. From that same paper "this increase in development time is offset by the reduced maintenance costs due to the improvement in quality". And some blog I found on Medium states fixing a bug in production costs 15x more than fixing a bug at implementation time. But I'd take that with a grain of salt.
 
-There are many more pros and many more cons...
+An argument I came across a lot in researching this talk is that TDD requires discipline. But I think that is a rubbish argument. Being a developer requires discipline. Getting out of bed requires discipline. We love pushing ourselves and learning new things, it's in our blood. Sometimes in my team I feel like I'm nagging. "Why are you writing code? Did you write a test?". And it can be a bit draining. But it's worth it. The joy of seeing a gracefully failing test is unparalled. That means you now get to do the fun bit - make it pass.
+
+There are many more pros and many more cons...There is a wealth of information and debate on the internet and I encourage you to look into it.
+
+But anyway, I'm bored of lecturing. Let's get coding.
+
+So we have a client. They know a little bit about programming, but not much. They know what a string is and they know what an int is, but that's about it. They have hired us because they need to interface with a legacy system. The legacy system gives them a string of comma-delimited ints, and they need to get the sum of those ints.
+
+** Next slide **
+
+Here are our requirements. First... second... third...
 
 Mainline development - confidence - quality - frequent release.
 
 TODO:
 Figure out how to change tabs in VSCode w keyboard
 research mainline development
+make green light same colour as dos code
+write noop snippet

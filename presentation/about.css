@@ -1,0 +1,46 @@
+.about-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "pro-bullets con-bullets";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% auto;
+}
+
+.about-header {
+  grid-area: header;
+  align-self: center;
+  font-size: 10vh;
+}
+
+.about-subheader {
+  font-size: 6vh;
+  text-align: center;
+}
+
+.about-bullets {
+  margin-left: 2vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.pro-bullets {
+  grid-area: pro-bullets;
+}
+
+.con-bullets {
+  grid-area: con-bullets;
+}
+
+.con-bullets {
+  grid-area: con-bullets;
+}
+
+.about-bullets-list {
+  /* list-style-position: inside; */
+}
+
+.about-bullet {
+  margin-left: 10vh;
+  text-align: left;
+}
