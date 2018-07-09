@@ -62,7 +62,7 @@ So why do it?
 
 In 2008, Microsoft, IBM and the North Carolina State University colloborated on research into TDD and published a paper entitled: "Realizing quality improvement through test driven development". In this paper, they contend that, and I quote, "The results of the case studies indicate that the pre-release defect density of the four products decreased between 40% and 90% relative to similar projects that did not use the TDD practice".
 
-** Next slide **
+** about.html **
 
 As demonstrated by Microsoft et al, TDD leads to fewer bugs and therefore higher code quality. This leads to higher confidence in your code base, which in turn leads to fast release cycles and a high release frequency. My team practices mainline development. This means that when we are satisfied with our code, we push directly to upstream master. Every time. We do not have pull requests and we do not have traditional code review. However, we have confidence. We often work in pairs or in a group, so code is reviewed in that way. Our devs are becoming QAs and our QAs are becoming devs. Quality is everybody's responsibility, not just QAs. Once we have pushed to upstream master, we hit a button in TeamCity and our code is in production within about 6 minutes. We release several times a day, every day. It is liberating. But accidents do happen. And we address mistakes immediately. If a build is failing, we stop dev work and fix it.
 
@@ -78,7 +78,7 @@ But anyway, I'm bored of lecturing. Let's get coding.
 
 So we have a client. They know a little bit about programming, but not much. They know what a string is and they know what an int is, but that's about it. They have hired us because they need to interface with a legacy system. The legacy system gives them a string of comma-delimited ints, and they need to get the sum of those ints.
 
-** Next slide **
+** clientRequirements.html **
 
 Here are our requirements. First... second... third...
 
@@ -89,3 +89,11 @@ Figure out how to change tabs in VSCode w keyboard
 research mainline development
 make green light same colour as dos code
 write noop snippet
+
+From practice:
+Lose newline requirements
+Make the int, string thing really overt.
+Action points at end: Thank yall. Start doing it, on any codebase. Find me on Slack if you want any help.
+eg: on bullets
+make terminal bigger
+Hover mouse on termianl when talking about it
