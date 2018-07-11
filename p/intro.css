@@ -4,10 +4,11 @@
     "top-space"
     "header"
     "subheader"
+    "middle-space"
     "byline"
     "bottom-space";
   grid-template-columns: 100%;
-  grid-template-rows: 10% 15% 10% 10% auto;
+  grid-template-rows: 20% 15% 10% 30% 10% auto;
 }
 
 .intro-header {
@@ -24,6 +25,6 @@
 
 .byline {
   align-self: center;
-  font-size: 5vh;
+  font-size: 6vh;
   grid-area: byline;
 }
